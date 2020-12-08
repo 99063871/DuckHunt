@@ -6,8 +6,6 @@ var posTop = 250;
 var hitCounter = 0;
 var missCounter = 0;
 var totalCounter = 0;
-console.log(totalCounter)
-
 
 var BHit = document.getElementById("ButtonHit");
 var BMiss = document.getElementById("ButtonMiss");
@@ -107,9 +105,9 @@ function hit(e){
 	posTop = 250;
 	hitCounter = hitCounter + 1;
 	totalCounter = totalCounter + 1
-	console.log(totalCounter);
 		if(totalCounter == "20"){
 		Score.innerHTML ="Je hebt " + hitCounter + " keer geraakt <br> en " + missCounter + " keer gemist <br> Je score is: " + hitCounter;
+		duck.style.display = "none";
 		}
 }
 
@@ -118,8 +116,8 @@ function miss(){
 	posTop = 250;
 	missCounter = missCounter + 1;
 	totalCounter = totalCounter + 1
-	console.log(totalCounter);
 		if(totalCounter == "20"){
 		Score.innerHTML ="Je hebt " + hitCounter + " keer geraakt <br> en " + missCounter + " keer gemist <br> Je score is:" + hitCounter;
+		duck.style.display = "none";
 		}
 }
